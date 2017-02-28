@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include "chat.c"
+
+int main () {
+  setlocale (LC_ALL, "Portuguese");
+   int a;
+ printf ("*****BEM-VINDO AO MAID CHAN - PRESSIONE QUALQUER TECLA PARA CONTINUAR*****\n");
+ getch();
+ printf ("\n---- Konnichiwa Aniki! Bem-vindo de volta! ----\n");
+ getch();
+ printf("\n - O que gostaria de fazer? ");
+ printf ("\nQuer conversar? aperte 1! \n\tQue tal organizar alguns arquivos? aperte 2! \n\tPosso mostrar o que eu fiz enquanto você estava fora, Aniki? Aperte 3!\n\r");
+ scanf ("%i", &a);
+   switch (a){
+       case 1:
+		chat ();
+		//Iniciar Chat
+		break;
+       case 2:
+		//Abrir organização de arquivos//
+		break
+       case 3:
+	//Abrir histórico de atividades da maid//
+	break;
+	
+    default:
+	printf ("Tudo bem então, aguardo por novas instruções em segundo plano!, Volte logo Aniki!");
+	}
+}
